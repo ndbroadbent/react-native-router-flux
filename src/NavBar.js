@@ -154,25 +154,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const propTypes = {
-  navigationState: PropTypes.object,
-  backButtonImage: Image.propTypes.source,
-  wrapBy: PropTypes.any,
-  component: PropTypes.any,
-  backButtonTextStyle: Text.propTypes.style,
-  leftButtonStyle: View.propTypes.style,
-  leftButtonIconStyle: Image.propTypes.style,
-  getTitle: PropTypes.func,
-  titleWrapperStyle: Text.propTypes.style,
-  titleStyle: Text.propTypes.style,
-  titleOpacity: PropTypes.number,
-  titleProps: PropTypes.any,
-  position: PropTypes.object,
-  navigationBarStyle: View.propTypes.style,
-  navigationBarBackgroundImage: Image.propTypes.source,
-  renderTitle: PropTypes.any,
-};
-
 const contextTypes = {
   drawer: PropTypes.object,
 };
@@ -514,7 +495,25 @@ class NavBar extends React.Component {
   }
 }
 
-NavBar.propTypes = propTypes;
+NavBar.propTypes = {
+  navigationState: PropTypes.object,
+  backButtonImage: Image.propTypes.source,
+  wrapBy: PropTypes.any,
+  component: PropTypes.any,
+  backButtonTextStyle: Text.propTypes.style,
+  leftButtonStyle: View.propTypes.style,
+  leftButtonIconStyle: Image.propTypes.style,
+  getTitle: PropTypes.func,
+  titleWrapperStyle: Text.propTypes.style,
+  titleStyle: Text.propTypes.style,
+  titleOpacity: PropTypes.number,
+  titleProps: PropTypes.any,
+  position: PropTypes.object,
+  navigationBarStyle: View.propTypes.style,
+  navigationBarBackgroundImage: Image.propTypes.source,
+  renderTitle: PropTypes.any,
+};
+
 NavBar.contextTypes = contextTypes;
 NavBar.defaultProps = defaultProps;
 
